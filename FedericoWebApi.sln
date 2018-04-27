@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FedericoWebApi", "FedericoWebApi\FedericoWebApi.csproj", "{F185864C-0B20-416B-9AB1-BE65E91E717E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FedericoWebApi.Tests", "FedericoWebApi.Tests\FedericoWebApi.Tests.csproj", "{801FDEBD-BC95-41F8-9BE3-E3D268B16E37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F185864C-0B20-416B-9AB1-BE65E91E717E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F185864C-0B20-416B-9AB1-BE65E91E717E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F185864C-0B20-416B-9AB1-BE65E91E717E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F185864C-0B20-416B-9AB1-BE65E91E717E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{801FDEBD-BC95-41F8-9BE3-E3D268B16E37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{801FDEBD-BC95-41F8-9BE3-E3D268B16E37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{801FDEBD-BC95-41F8-9BE3-E3D268B16E37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{801FDEBD-BC95-41F8-9BE3-E3D268B16E37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {280CAF70-8CA7-4C8F-825A-BD04A12D766F}
+	EndGlobalSection
+EndGlobal
