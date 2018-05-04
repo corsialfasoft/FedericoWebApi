@@ -31,6 +31,31 @@ namespace FedericoWebApi.Models {
             }
 	    }
 
+		public void AddProdotto(Prodotto p){		
+			ProdottiSet product = new ProdottiSet();
+			using (var db = new RICHIESTEEntities()) {						
+				product.descrizione = p.Descrizione;
+				product.quantita = p.Quantita;
+				db.ProdottiSet.Add(product);	
+				db.SaveChanges();
+			}
+		}
+
+		public void DelProdotto(int id){
+			ProdottiSet product = new ProdottiSet();
+			using (var db = new RICHIESTEEntities()) {
+				product = db.ProdottiSet.Find(id);			
+				db.ProdottiSet.Remove(product);
+				db.SaveChanges();
+			}
+		}
+
+
+
+
+
+
+
 	    public Prodotto SearchByCode(int codice) {
 		    Prodotto trovato = new Prodotto();
             using (var db = new RICHIESTEEntities()) {
@@ -55,6 +80,7 @@ namespace FedericoWebApi.Models {
 					Prodotto tmp = new Prodotto();
 					tmp.Codice = prod.Id;
 					tmp.Descrizione = prod.descrizione;
+					tmp.Quantita = prod.quantita;
 					output.Add(tmp);
 				}
 			}

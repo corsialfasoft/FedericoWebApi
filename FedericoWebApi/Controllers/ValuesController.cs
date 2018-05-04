@@ -21,7 +21,8 @@ namespace FedericoWebApi.Controllers {
 		}
 
 		// POST api/values
-		public void Post([FromBody]string value) {
+		public void Post([FromBody]Prodotto value) {
+			dm.AddProdotto(value);
 		}
 
 		// PUT api/values/5
@@ -30,6 +31,7 @@ namespace FedericoWebApi.Controllers {
 
 		// DELETE api/values/5
 		public void Delete(int id) {
+			dm.DelProdotto(id);
 		}
 	}
 }
